@@ -14,7 +14,7 @@ namespace SqlEmail
                 msg.From = new MailAddress(from);
                 msg.Subject = subject;
                 msg.Body = body;
-                msg.IsBodyHtml = true;
+                msg.IsBodyHtml = false;
 
                 PopulateAddresses(recipients, msg.To);
                 PopulateAddresses(recipients, msg.CC);
